@@ -1,0 +1,39 @@
+<?php
+
+/**
+ * @file
+ * Contains inventory.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function inventory_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the inventory module.
+    case 'help.page.inventory':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Inventory Management') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function inventory_theme() {
+  return [
+    'inventory' => [
+      'render element' => 'children',
+    ],
+  ];
+}
+
+function inventory_cron() {
+  error_log("inventory Cron Job wokrs", 0);
+}

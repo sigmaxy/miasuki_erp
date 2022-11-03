@@ -1,0 +1,11 @@
+inventory:
+    version: 1.x
+    css:
+        theme:
+            css/inventory.css: {}
+            css/datatables.min.css: {}
+    js:
+      js/inventory.js: {}
+      js/datatables.min.js: {}
+    dependencies:
+      - core/jquery

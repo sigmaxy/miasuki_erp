@@ -1,0 +1,94 @@
+
+product.simple_product_form:
+  path: '/product/form/simple_product/{product_id}'
+  defaults:
+    _form: '\Drupal\product\Form\SimpleProductForm'
+    _title: 'Simple Product Form'
+  requirements:
+    _permission: 'access product coniguration'
+  
+
+product.config_product_form:
+  path: '/product/form/config_product/{product_id}'
+  defaults:
+    _form: '\Drupal\product\Form\ConfigProductForm'
+    _title: 'Config Product Form'
+  requirements:
+    _permission: 'access product coniguration'
+  
+
+product.import_config_product_form:
+  path: '/product/form/import_config_product'
+  defaults:
+    _form: '\Drupal\product\Form\ImportConfigProductForm'
+    _title: 'Import Config Product From ERP CSV'
+  requirements:
+    _permission: 'access develop coniguration'
+  
+
+product.import_simple_product_form:
+  path: '/product/form/import_simple_product'
+  defaults:
+    _form: '\Drupal\product\Form\ImportSimpleProductForm'
+    _title: 'Import Simple Product Form ERP CSV'
+  requirements:
+    _permission: 'access develop coniguration'
+  
+
+product.product_controller_list:
+  path: '/product/listconfig'
+  defaults:
+    _controller: '\Drupal\product\Controller\ProductController::list_config_products'
+    _title: 'Config Products'
+  requirements:
+    _permission: 'access product coniguration'
+
+product.product_info:
+  path: '/product/ajax_simple_product_info/{magento_sku}'
+  defaults:
+    _controller: '\Drupal\product\Controller\ProductController::ajax_simple_product_info'
+    _title: 'Simple Products'
+  requirements:
+    _permission: 'access product coniguration'
+
+product.product_info_bybarcode:
+  path: '/product/ajax_simple_product_info_bybarcode/{barcode}'
+  defaults:
+    _controller: '\Drupal\product\Controller\ProductController::ajax_simple_product_info_bybarcode'
+    _title: 'Simple Products'
+  requirements:
+    _permission: 'access product coniguration'
+
+product.list_config_product_form:
+  path: '/product/form/list_config_product'
+  defaults:
+    _form: '\Drupal\product\Form\ListConfigProductForm'
+    _title: 'List All Config Product'
+  requirements:
+    _permission: 'access product coniguration'
+  
+
+product.list_simple_product_form:
+  path: '/product/form/list_simple_product'
+  defaults:
+    _form: '\Drupal\product\Form\ListSimpleProductForm'
+    _title: 'List All Simple Product'
+  requirements:
+    _permission: 'access product coniguration'
+  
+
+product.meta_data_form:
+  path: '/product/form/meta_data'
+  defaults:
+    _form: '\Drupal\product\Form\MetaDataForm'
+    _title: 'Meta Data'
+  requirements:
+    _permission: 'access product coniguration'
+  
+product.autocomplete_simple_product_sku:
+  path: '/product/autocomplete_simple_product_sku/{count}'
+  defaults:
+    _controller: '\Drupal\product\Controller\ProductController::autocomplete_simple_product_sku'
+    _format: json
+  requirements:
+    _permission: 'access product coniguration'

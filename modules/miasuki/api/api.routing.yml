@@ -1,0 +1,16 @@
+
+api.authenticate_controller_login:
+  path: '/api/test_api'
+  defaults:
+    _controller: '\Drupal\api\Controller\AuthenticateController::test_api'
+    _title: 'test_api'
+  requirements:
+    _permission: 'access api coniguration'
+
+api.api_order_controller_syncorder:
+  path: '/api/syncorder'
+  defaults:
+    _controller: '\Drupal\api\Controller\ApiOrderController::syncorder'
+    _title: 'Sync Order'
+  requirements:
+    _permission: 'access api coniguration'

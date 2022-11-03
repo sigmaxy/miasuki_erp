@@ -1,0 +1,4 @@
+access api coniguration:
+  title: 'API Access Configuration'
+  description: 'Access API'
+  restrict access: true

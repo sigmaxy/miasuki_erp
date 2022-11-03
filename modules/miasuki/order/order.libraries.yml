@@ -1,0 +1,7 @@
+order:
+  version: 1.x
+  js:
+    js/order.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal.ajax

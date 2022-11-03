@@ -1,0 +1,4 @@
+access develop coniguration:
+  title: 'Develop Access Configuration'
+  description: 'Access list edit delete develop.'
+  restrict access: true

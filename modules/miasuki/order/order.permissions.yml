@@ -1,0 +1,4 @@
+access order coniguration:
+  title: 'Order Access Configuration'
+  description: 'Access list edit delete order.'
+  restrict access: true

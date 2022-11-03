@@ -1,0 +1,5 @@
+name: 'product'
+type: module
+description: 'Product info'
+core: 8.x
+package: 'Miasuki'

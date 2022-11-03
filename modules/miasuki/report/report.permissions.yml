@@ -1,0 +1,4 @@
+access report coniguration:
+  title: 'Report Access Configuration'
+  description: 'Access Report.'
+  restrict access: true

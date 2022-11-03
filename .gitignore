@@ -1,0 +1,9 @@
+#/index.php
+/sites/default/files/*.*
+sites/default/files/*
+/sites/default/files
+#import magento1.0 products
+/.DS_Store
+.DS_Store
+/.htaccess
+.htaccess

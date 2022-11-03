@@ -1,0 +1,12 @@
+report:
+    version: 1.x
+    css:
+        theme:
+            css/report.css: {}
+            css/chart.min.css: {}
+    js:
+      js/chart.min.js: {}
+      js/report.js: {}
+    dependencies:
+      - core/jquery
+      - core/drupalSettings

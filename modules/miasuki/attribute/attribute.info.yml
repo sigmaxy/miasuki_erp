@@ -1,0 +1,5 @@
+name: 'attribute'
+type: module
+description: 'Product Attributes'
+core: 8.x
+package: 'Miasuki'

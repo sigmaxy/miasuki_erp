@@ -1,0 +1,97 @@
+th,td{
+	text-align: center !important;
+	overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.inventory_table{
+	margin: auto;
+	table-layout: flex;
+}
+.inventory_table th,td{
+	text-align: center;
+	overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.seo_table{
+	margin: auto;
+	table-layout: flex;
+}
+.seo_table th,td{
+	text-align: center;
+	overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.product_detail_table{
+	margin: auto;
+	table-layout: fixed;
+}
+.product_detail_table th,td{
+	text-align: center;
+}
+.next_button{
+	margin-left: 20px;
+}
+.order_address_table th,td{
+	text-align: center;
+}
+.not_equal{
+	color: red;
+}
+.table_header_magento_sku{
+	min-width: 150px;
+}
+.table_header_warehouse{
+	max-width: 100px;
+	overflow: auto;
+    text-overflow: nowrap;
+}
+td.details-control {
+    background: url('images/details_open.png') no-repeat center center;
+    cursor: pointer;
+}
+tr.shown td.details-control {
+    background: url('images/details_close.png') no-repeat center center;
+}
+td.seo-control {
+    background: url('images/details_open.png') no-repeat center center;
+    cursor: pointer;
+}
+tr.shown td.seo-control {
+    background: url('images/details_close.png') no-repeat center center;
+}
+.sync_progress_bar{
+	width: 100%;
+	height: 40px;
+	position: relative;
+	border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 15px;
+}
+.sync_progress_bar_inner{
+	width: 0%;
+	height: 38px;
+	position: relative;
+	background-color: #ddd;
+	position: absolute;
+}
+.sync_progress_bar_text{
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	line-height: 38px;
+}
+#sync_config_button{
+	margin-left: 20px;
+}
+.details_warning .panel-heading a{
+	color: red;
+}
+.add_ignore_inventory_button{
+	margin-left: 20px;
+}
+.table_header_magento_sku{
+	width: 200px;
+}

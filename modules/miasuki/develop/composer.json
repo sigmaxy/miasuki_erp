@@ -1,0 +1,14 @@
+{
+  "name": "drupal/develop",
+  "type": "drupal-module",
+  "description": "For Developer Use Only",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/develop",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/develop",
+    "source": "http://cgit.drupalcode.org/develop"
+  },
+  "require": { }
+}

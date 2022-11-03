@@ -1,0 +1,42 @@
+
+order.list_order_form:
+  path: '/order/form/list_order'
+  defaults:
+    _form: '\Drupal\order\Form\ListOrderForm'
+    _title: 'List All Orders'
+  requirements:
+    _permission: 'access order coniguration'
+  
+
+order.order_controller_get_order_by_id:
+  path: '/order/get_order_by_id'
+  defaults:
+    _controller: '\Drupal\order\Controller\OrderController::get_order_by_id'
+    _title: 'Order Detail'
+  requirements:
+    _permission: 'access order coniguration'
+
+order.order_detail_form:
+  path: '/order/form/order_detail/{order_id}'
+  defaults:
+    _form: '\Drupal\order\Form\OrderDetailForm'
+    _title: 'Order Detail'
+  requirements:
+    _permission: 'access order coniguration'
+  
+
+order.b2b_order_form:
+  path: '/order/form/b2b_order'
+  defaults:
+    _form: '\Drupal\order\Form\B2BOrderForm'
+    _title: 'Offline Order Import'
+  requirements:
+    _permission: 'access order coniguration'
+  
+order.offline_order_form:
+  path: '/order/form/offline_order'
+  defaults:
+    _form: '\Drupal\order\Form\OfflineOrderForm'
+    _title: 'Offline Order Create'
+  requirements:
+    _permission: 'access order coniguration'

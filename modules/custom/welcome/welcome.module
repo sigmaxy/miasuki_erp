@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains welcome.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function welcome_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the welcome module.
+    case 'help.page.welcome':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('My Awesome Module') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function welcome_theme() {
+  return [
+    'welcome' => [
+      'render element' => 'children',
+    ],
+  ];
+}

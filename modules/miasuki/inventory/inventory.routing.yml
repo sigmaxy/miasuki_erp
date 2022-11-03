@@ -1,0 +1,135 @@
+
+inventory.inbound_form:
+  path: '/inventory/form/inbound'
+  defaults:
+    _form: '\Drupal\inventory\Form\InboundForm'
+    _title: 'Inbound'
+  requirements:
+    _permission: 'access inventory coniguration'
+  
+
+inventory.list_inventory_form:
+  path: '/inventory/form/list_inventory'
+  defaults:
+    _form: '\Drupal\inventory\Form\ListInventoryForm'
+    _title: 'List Inventory'
+  requirements:
+    _permission: 'access inventory coniguration'
+  
+
+inventory.inventory_controller_Inventory:
+  path: '/inventory/inventory'
+  defaults:
+    _controller: '\Drupal\inventory\Controller\InventoryController::Inventory'
+    _title: 'Inventory'
+  requirements:
+    _permission: 'access inventory coniguration'
+
+inventory.inventory_form:
+  path: '/inventory/form/inventory/{product_id}'
+  defaults:
+    _form: '\Drupal\inventory\Form\InventoryForm'
+    _title: 'Inventory Update'
+  requirements:
+    _permission: 'access inventory coniguration'
+  
+
+inventory.outbound_form:
+  path: '/inventory/form/outbound'
+  defaults:
+    _form: '\Drupal\inventory\Form\OutboundForm'
+    _title: 'Outbound'
+  requirements:
+    _permission: 'access inventory coniguration'
+  
+
+inventory.inventory_log_form:
+  path: '/inventory/form/inventory_log'
+  defaults:
+    _form: '\Drupal\inventory\Form\InventoryLogForm'
+    _title: 'Inventory History Log'
+  requirements:
+    _permission: 'access inventory coniguration'
+  
+inventory.mass_relocation_form:
+  path: '/inventory/form/mass_relocation'
+  defaults:
+    _form: '\Drupal\inventory\Form\MassRelocationForm'
+    _title: 'Mass Products Relocation'
+  requirements:
+    _permission: 'access inventory coniguration'
+  
+inventory.relocation_history:
+  path: '/inventory/form/relocation_history'
+  defaults:
+    _form: '\Drupal\inventory\Form\RelocationHistory'
+    _title: 'Relocation History'
+  requirements:
+    _permission: 'access inventory coniguration'
+
+inventory.relocation_history_delivery_note:
+  path: '/inventory/deliverynote/{relocation_history_id}'
+  defaults:
+    _controller: '\Drupal\inventory\Controller\InventoryController::GenerateDO'
+    _title: 'Inventory'
+  requirements:
+    _permission: 'access inventory coniguration'
+
+inventory.mgb_stock_check_form:
+  path: '/inventory/form/mgb_stock_check'
+  defaults:
+    _form: '\Drupal\inventory\Form\MGBStockCheckForm'
+    _title: 'MGB Stock Check'
+  requirements:
+    _permission: 'access inventory coniguration'
+  
+
+inventory.inventory_update_form:
+  path: '/inventory/form/inventory_update'
+  defaults:
+    _form: '\Drupal\inventory\Form\InventoryUpdateForm'
+    _title: 'Manually Stock Check'
+  requirements:
+    _permission: 'access inventory coniguration'
+  
+
+inventory.sync_form:
+  path: '/inventory/form/sync'
+  defaults:
+    _form: '\Drupal\inventory\Form\SyncForm'
+    _title: 'Sync Inventory'
+  requirements:
+    _permission: 'access inventory coniguration'
+  
+
+inventory.milan_stock_check_form:
+  path: '/inventory/form/milan_stock_check'
+  defaults:
+    _form: '\Drupal\inventory\Form\MilanStockCheckForm'
+    _title: 'Milan Stock Check'
+  requirements:
+    _permission: 'access inventory coniguration'
+
+inventory.list_ignore_inventory:
+  path: '/inventory/form/list_ignore_inventory'
+  defaults:
+    _form: '\Drupal\inventory\Form\ListIgnoreInventory'
+    _title: 'List Ignore Inventory'
+  requirements:
+    _permission: 'access inventory coniguration'
+
+inventory.ignore_inventory_form:
+  path: '/inventory/form/ignore_inventory/{ignore_id}'
+  defaults:
+    _form: '\Drupal\inventory\Form\IgnoreInventoryForm'
+    _title: 'Ignore Inventory Form'
+  requirements:
+    _permission: 'access inventory coniguration'
+    
+inventory.inventory_hold_form:
+  path: '/inventory/form/inventory_hold/{inventory_id}'
+  defaults:
+    _form: '\Drupal\inventory\Form\InventoryHoldForm'
+    _title: 'Inventory Hold Form'
+  requirements:
+    _permission: 'access inventory coniguration'

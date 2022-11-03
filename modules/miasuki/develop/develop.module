@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains develop.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function develop_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the develop module.
+    case 'help.page.develop':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('For Developer Use Only') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function develop_theme() {
+  return [
+    'develop' => [
+      'render element' => 'children',
+    ],
+  ];
+}

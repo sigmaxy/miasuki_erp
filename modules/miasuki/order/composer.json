@@ -1,0 +1,14 @@
+{
+  "name": "drupal/order",
+  "type": "drupal-module",
+  "description": "Miasuki Order",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/order",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/order",
+    "source": "http://cgit.drupalcode.org/order"
+  },
+  "require": { }
+}

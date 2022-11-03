@@ -1,0 +1,4 @@
+access product coniguration:
+  title: 'Product Access Configuration'
+  description: 'Access list edit delete product.'
+  restrict access: true

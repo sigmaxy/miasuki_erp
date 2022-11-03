@@ -1,0 +1,8 @@
+
+welcome.default_controller_warehouselist:
+  path: 'welcome/warehouselist'
+  defaults:
+    _controller: '\Drupal\welcome\Controller\DefaultController::warehouselist'
+    _title: 'warehouse'
+  requirements:
+    _permission: 'access content'

@@ -1,0 +1,5 @@
+name: 'Develop'
+type: module
+description: 'For Developer Use Only'
+core: 8.x || 9.x
+package: 'Miasuki'

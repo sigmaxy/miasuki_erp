@@ -1,0 +1,35 @@
+
+report.order_report_form:
+  path: '/report/form/order_report'
+  defaults:
+    _form: '\Drupal\report\Form\OrderReportForm'
+    _title: 'Order Report'
+  requirements:
+    _permission: 'access report coniguration'
+  
+
+report.report_controller_report:
+  path: '/report/report'
+  defaults:
+    _controller: '\Drupal\report\Controller\ReportController::report'
+    _title: 'Report Controller'
+  requirements:
+    _permission: 'access content'
+
+report.location_report_form:
+  path: '/report/form/location_report'
+  defaults:
+    _form: '\Drupal\report\Form\LocationReportForm'
+    _title: 'Location Report'
+  requirements:
+    _access: 'TRUE'
+  
+
+report.category_report_form:
+  path: '/report/form/category_report'
+  defaults:
+    _form: '\Drupal\report\Form\CategoryReportForm'
+    _title: 'Category Report'
+  requirements:
+    _access: 'TRUE'
+  

@@ -1,0 +1,4 @@
+access inventory coniguration:
+  title: 'inventory Access Configuration'
+  description: 'Access list edit delete Inventory.'
+  restrict access: true

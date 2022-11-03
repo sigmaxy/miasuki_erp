@@ -1,0 +1,42 @@
+
+warehouse.add_warehouse_controller_add_warehouse:
+  path: '/warehouse/add'
+  defaults:
+    _controller: '\Drupal\warehouse\Controller\AddWarehouseController::add_warehouse'
+    _title: 'add_warehouse'
+  requirements:
+    _permission: 'access content'
+
+warehouse.warehouse_controller_list_warehouse:
+  path: '/warehouse/list'
+  defaults:
+    _controller: '\Drupal\warehouse\Controller\WarehouseController::list_warehouse'
+    _title: 'All Warehouse'
+  requirements:
+    _permission: 'access warehouse coniguration'
+
+warehouse.add_warehouse_form:
+  path: '/warehouse/form/add'
+  defaults:
+    _form: '\Drupal\warehouse\Form\AddWarehouseForm'
+    _title: 'Add New Warehouse'
+  requirements:
+    _permission: 'access warehouse coniguration'
+
+warehouse.edit_warehouse_form:
+  path: '/warehouse/form/edit'
+  defaults:
+    _form: '\Drupal\warehouse\Form\EditWarehouseForm'
+    _title: 'EditWarehouseForm'
+  requirements:
+    _permission: 'access warehouse coniguration'
+
+warehouse.delete_warehouse_form:
+  path: '/warehouse/form/delete/{cid}'
+  defaults:
+    _form: '\Drupal\warehouse\Form\DeleteWarehouseForm'
+    _title: 'DeleteWarehouseForm'
+  requirements:
+    _permission: 'access warehouse coniguration'
+
+  

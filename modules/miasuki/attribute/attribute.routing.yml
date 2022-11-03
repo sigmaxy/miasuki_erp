@@ -1,0 +1,34 @@
+
+attribute.color_form:
+  path: '/attribute/form/color'
+  defaults:
+    _form: '\Drupal\attribute\Form\ColorForm'
+    _title: 'ColorForm'
+  requirements:
+    _access: 'TRUE'
+  
+
+attribute.import_color_form:
+  path: '/attribute/form/import_color'
+  defaults:
+    _form: '\Drupal\attribute\Form\ImportColorForm'
+    _title: 'ImportColorForm'
+  requirements:
+    _access: 'TRUE'
+  
+
+attribute.import_size_form:
+  path: '/attribute/form/import_size'
+  defaults:
+    _form: '\Drupal\attribute\Form\ImportSizeForm'
+    _title: 'ImportSizeForm'
+  requirements:
+    _access: 'TRUE'
+  
+attribute.attribute_controller_get_color_by_id:
+  path: '/attribute/get_color_by_id'
+  defaults:
+    _controller: '\Drupal\attribute\Controller\AttributeController::get_color_by_id'
+    _title: 'Attribute'
+  requirements:
+    _permission: 'access content'

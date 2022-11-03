@@ -1,0 +1,14 @@
+{
+  "name": "drupal/warehouse",
+  "type": "drupal-module",
+  "description": "Warehouse Module",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/warehouse",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/warehouse",
+    "source": "http://cgit.drupalcode.org/warehouse"
+  },
+  "require": { }
+}

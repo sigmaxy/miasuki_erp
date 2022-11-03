@@ -1,0 +1,5 @@
+name: 'order'
+type: module
+description: 'Miasuki Order'
+core: 8.x
+package: 'Miasuki'

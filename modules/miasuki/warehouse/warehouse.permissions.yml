@@ -1,0 +1,4 @@
+access warehouse coniguration:
+  title: 'warehouse access Configuration'
+  description: 'Access list edit delete warehouse.'
+  restrict access: true

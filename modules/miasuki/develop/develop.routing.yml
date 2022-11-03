@@ -1,0 +1,15 @@
+develop.develop_controller_action:
+  path: '/develop/action/{actionname}'
+  defaults:
+    _controller: '\Drupal\develop\Controller\DevelopController::action'
+    _title: 'action'
+  requirements:
+    _permission: 'access develop coniguration'
+
+develop.excel_controller:
+  path: '/develop/formate_sheet_data/{name}'
+  defaults:
+    _controller: '\Drupal\develop\Controller\ExcelController::formate_sheet_data'
+    _title: 'test'
+  requirements:
+    _permission: 'access develop coniguration'

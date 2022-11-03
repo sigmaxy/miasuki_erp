@@ -1,0 +1,14 @@
+{
+  "name": "drupal/product",
+  "type": "drupal-module",
+  "description": "Product info",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/product",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/product",
+    "source": "http://cgit.drupalcode.org/product"
+  },
+  "require": { }
+}
